@@ -1,0 +1,64 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f9f1;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.mood-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.mood-buttons button:hover {
+  transform: scale(1.05);
+}
+
+.garden {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 150px;
+}
+
+.plant {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  animation: grow 0.5s ease-out;
+}
+
+@keyframes grow {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Plant icons by mood */
+.plant.happy::before {
+  content: "🌻";
+  font-size: 2.5rem;
+}
+.plant.sad::before {
+  content: "🌧️";
+  font-size: 2.5rem;
+}
+.plant.calm::before {
+  content: "🍃";
+  font-size: 2.5rem;
+}
+.plant.angry::before {
+  content: "🌵";
+  font-size: 2.5rem;
+}

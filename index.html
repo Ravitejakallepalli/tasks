@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mood Garden</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌱 Mood Garden</h1>
+    <p>How are you feeling today?</p>
+    <div class="mood-buttons">
+      <button onclick="addMood('happy')">😊 Happy</button>
+      <button onclick="addMood('sad')">😢 Sad</button>
+      <button onclick="addMood('calm')">😌 Calm</button>
+      <button onclick="addMood('angry')">😠 Angry</button>
+    </div>
+    <h2>Your Garden</h2>
+    <div class="garden" id="garden"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
